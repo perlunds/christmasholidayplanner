@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Julledighet</title>
+  </head>
+  <body>
+    <main class="page">
+      <section class="planner">
+        <h1 class="planner__title">Maximera ledigheten runt jul och ny&aring;r</h1>
+        <p class="planner__text">
+          Appen visar hur du f&aring;r flest lediga dagar i str&auml;ck med minst antal semesterdagar.
+        </p>
+
+        <section class="controls" aria-label="Inställningar">
+          <section class="control" aria-label="År">
+            <span class="control__top">
+              <span class="control__label">&Aring;r</span>
+            </span>
+            <div class="year-buttons" role="group" aria-label="Välj år" data-year-buttons></div>
+          </section>
+
+          <label class="control">
+            <span class="control__top">
+              <span class="control__label">Max antal semesterdagar:</span>
+              <output class="control__value" data-value="budget"></output>
+            </span>
+            <input class="control__range" type="range" min="0" max="15" step="1" data-input="budget" />
+          </label>
+        </section>
+
+        <section class="legend" aria-label="Förklaring">
+          <span class="legend__item"><i class="legend__swatch legend__swatch--weekend"></i>Helg</span>
+          <span class="legend__item"><i class="legend__swatch legend__swatch--holiday"></i>R&ouml;d/ledig dag</span>
+          <span class="legend__item"><i class="legend__swatch legend__swatch--leave"></i>Semesterdag</span>
+        </section>
+
+        <section data-results></section>
+
+        <section class="seo-copy" aria-label="Om julledighet och semesterplanering">
+          <h2 class="seo-copy__title">Planera julledighet smart i Sverige</h2>
+          <p>
+            Med den h&auml;r kalkylatorn kan du planera semester runt jul och ny&aring;r,
+            se r&ouml;da dagar, helger och semesterdagar i en tydlig &ouml;versikt och hitta
+            de b&auml;sta perioderna f&ouml;r l&aring;ng sammanh&auml;ngande ledighet.
+          </p>
+          <p>
+            Verktyget passar dig som vill j&auml;mf&ouml;ra olika &aring;r och snabbt se hur m&aring;nga
+            semesterdagar som beh&ouml;vs f&ouml;r att f&aring; ut s&aring; mycket ledighet som m&ouml;jligt.
+          </p>
+          <p>
+            Vanliga s&ouml;kningar &auml;r julledighet, semesterdagar runt jul,
+            r&ouml;da dagar i Sverige, planera semester ny&aring;r och f&aring; l&aring;ng ledighet
+            med f&aring; semesterdagar.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
